@@ -1,0 +1,289 @@
+.tr {
+  align-content: center; 
+}
+.row > div{
+  border:1px solid white;
+  min-height: 50px;                               
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+body {
+  background: #f8f6f6;
+  font-family: cursive;
+  font-weight: normal;
+}
+
+textarea {
+  font: bold 15px "lucida sans", "trebuchet MS", "Tahoma";
+}
+.todo-list {
+  border-top: 1px solid #e6ebed;
+}
+
+.form-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 200;
+  position: relative;
+  text-align: left;
+  top: 55px;
+  width: 96.5vh;
+  padding: 1.9vh;
+  background: #e7d3d3;  
+}
+
+.listtasks{
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 200;
+  position: relative;
+  text-align: left;
+  top: 55px;
+  width: 100vh;
+  padding: 5px;
+  background: #e7d3d3;  
+}
+
+.todo-list:after {
+  content: "";
+  width: 0.4vh;
+  z-index: 2;
+  border: 1px solid #f2e3df;
+  border-width: 0 1px;
+  position: absolute;
+  top: 0vh;
+  bottom: 0vh;
+  left: 4.9vh;
+}
+
+.todo-list li {
+  position: relative;
+  /* padding: 2.2vh 15px 2vh 7.9vh; */
+  line-height: 5vh;
+  font-size: 3vh;
+  color: #8b8f97;
+  border-bottom: 1px solid #e6ebed;
+}
+.editItem {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.linet {
+  text-decoration: line-through;
+  background-color: #e0e0e0 !important;
+}
+
+li:hover {
+  background: #eaeaea;
+}
+
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  width: 94%;
+  outline: none;
+  text-decoration: inherit;
+}
+
+.form-wrapper input {
+  width: 400px;
+  height: 11px;
+  padding: 10px;
+  font: bold 15px "lucida sans", "trebuchet MS", "Tahoma";
+  border: 2px;
+  background: #eee;  
+  border-radius: 3px 0 0 3px;
+}
+
+.form-wrapper textarea {
+  width: 400px;
+  height: 30px;
+  padding: 10px;
+  font: bold 15px "lucida sans", "trebuchet MS", "Tahoma" !important;
+  border: 2px;
+  background: #eee;  
+  border-radius: 3px 0 0 3px;
+}
+
+.todo {
+  padding: 8.9vh 0;
+}
+
+.closebtn {
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button {
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 5vh;
+  width: 25vh;
+  font: bold 2vh "lucida sans", "trebuchet MS", "Tahoma";
+  color: #fff;
+  text-transform: uppercase;
+  background: #d83c3c;
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btnlist {
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 5px;
+  cursor: pointer;
+  height: 4vh;
+  width: 10vh;
+  font: bold 2vh "lucida sans", "trebuchet MS", "Tahoma";
+  color: #fff;
+  background: #d83c3c;
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 10px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+.btnlist2 {
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 5px;
+  cursor: pointer;
+  height: 4vh;
+  width: 10vh;
+  font: bold 2vh "lucida sans", "trebuchet MS", "Tahoma";
+  color: #fff;  
+  background: #64a1f0;
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 10px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+.main {
+  top: 4vh;
+  position: relative;
+}
+
+.notepad {
+  margin-left: auto;
+  margin-right: auto;
+  height: 4vh;
+  width: 100.3vh;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(80, 0, 0, 0.3);
+  z-index: 500;
+  position: relative;
+}
+.listtask {
+  margin-left: auto;
+  margin-right: auto;
+  height: 4vh;
+  width: 100.3vh;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(80, 0, 0, 0.3);
+  z-index: 500;
+  position: relative;
+}
+
+.notepad h1 {
+  text-align: center;
+  font-size: 4vh;
+  height: 7vh;
+  line-height: 7vh;
+  background-color: #3f7eb6;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+  border-radius: 5px 5px 0 0;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  
+  position: relative;
+}
+
+.notepad h1:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0.5vh;
+  left: 0;
+  border-bottom: 0.2vh dashed rgba(0, 0, 0, 0.6);
+}
+
+
+form {
+  margin-bottom: inherit;
+  display: inherit;
+  margin-top: -33px;
+}
+
+.eitem {
+  background: green;
+  width: 100%;
+  left: 0;
+}
+
+
+
+
+input:disabled,
+textarea:disabled {
+  color: inherit;
+}
+
+input {
+  -webkit-appearance: inherit;
+  background-color: inherit;
+  -webkit-rtl-ordering: inherit;
+  user-select: inherit;
+  cursor: inherit;
+  border-width: inherit;
+  border-style: inherit;
+  border-color: inherit;
+  border-image: inherit;
+  font: bold 15px "lucida sans", "trebuchet MS", "Tahoma";
+}
+
+.currentlyBeingEditedImg {
+  filter: grayscale(0%);
+}
+
+.loading {
+  text-align: center;
+  margin-top: 25vh;
+}
+
+.checked {
+  text-decoration: line-through;
+  background-color: #e0e0e0 !important;
+}
+
+.content {
+  padding: 2.2vh 15px 2vh 2.3vh;
+  display: block;
+  width: 83.5vh;
+  margin-left: 5.6vh;
+}
